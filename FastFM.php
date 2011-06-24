@@ -13,7 +13,7 @@
  *   FastFM is a lightweight yet powerful ORM that allows for easy
  *   management of records as well as PHP model validation.
  *   
- * 	 @author: James Strong
+ *   @author: James Strong
  *   @copyright: None!
  *   @license: Do whatever you want with this. No restrictions whatsoever.
  *   @version: 1.0 Alpha.

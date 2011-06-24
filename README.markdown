@@ -128,9 +128,9 @@ FastFM has some basic support for validation. Not very extensive at the moment, 
   
 FastFM supports these 3 validation methods out of the box.
     Validation::$PRESENCE
-   Validation::$UNIQUENESS
-   // email regexp check.
-   Validation::$EMAIL_FORMAT
+    Validation::$UNIQUENESS
+    // email regexp check.
+    Validation::$EMAIL_FORMAT
    
 In order to use these methods you have to define the validation array in the constructor of your FastFM class.
 
@@ -158,15 +158,22 @@ The function defined on your model receives one parameter, the validation object
             $pos = strpos($value, ' ');
             // if some spaces were found
             if ($pos) {
-                $this -> addError("Username", "Username can't have spaces");
+                $validation -> addError("Username", "Username can't have spaces");
                 return false;
            }		      
        }
     }
+
+## Other
+FastFM only works with PHP 5.3 (because of its late-static bindings) and has only been tested with FM11, but probably works with previous versions of FM.
+
+Current release is 1.0 Alpha.
+
+If you have any contributions to make, just submit a pull request and I'll take a look,.
 
 ## That's it!
 That's it for now!
 
 But don't worry, FastFM is under active development and there will be more updates soon!
 
-You can follow PM me if you are interested in contributing.
+You can PM me if you are interested in contributing.
